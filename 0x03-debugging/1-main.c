@@ -19,5 +19,6 @@ int main(void)
 	 * }
 	 */
 	printf("infinte loop avoided! \\o/\n");
+
 	return (0);
 }
