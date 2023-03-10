@@ -1,17 +1,10 @@
 #include "main.h"
-/**
- * _islower - Entry point
- *
- * @c: character to compare
- *
- * Return: 1 if true, 0 if false
- */
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 
 int _islower(int c)
 {
-	if (c >= 'a' && c <= 'z')
-	{
-	return (1);
-	}
-	return (0);
+    return (c >= 'a' && c <= 'z');
 }
