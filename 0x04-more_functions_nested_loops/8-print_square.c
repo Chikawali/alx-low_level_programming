@@ -7,6 +7,7 @@
  */
 
 void print_square(int c)
+
 {
 
 	if (c > 0)
@@ -15,19 +16,19 @@ void print_square(int c)
 
 		while (i < c)
 		{
-			int j = 0;
+		int j = 0;
 
-			while (j < c)
-			{
-				_putchar('#');
-				j++;
-			}
-			_putchar('\n');
-			i++;
+		while (j < c)
+		{
+		_putchar('#');
+		j++;
+		}
+		_putchar('\n');
+		i++;
 		}
 	}
 	else
 	{
-		_putchar('\n');
+	_putchar('\n');
 	}
 }
