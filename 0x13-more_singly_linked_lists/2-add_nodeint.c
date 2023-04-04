@@ -17,5 +17,5 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	verve->next = *head;
 	*head = verve;
 
-	return (vereve);
+	return (verve);
 }
