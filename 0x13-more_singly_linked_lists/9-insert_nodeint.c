@@ -10,7 +10,7 @@
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *aux_node = *head;
-	listint *other_node;
+	listint_t *other_node;
 	unsigned int index;
 	unsigned int array = 0;
 
@@ -26,6 +26,13 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		other_node->next = *head;
 		*head = other_node;
 		return (*head);
+	}
+	/* search of position to insert */
+	index = idx - 1;
+	while (aux_node && array != index)
+	{
+		array++;
+		aux_node = aux_node->next;
 	}
 
 	/* general case */
